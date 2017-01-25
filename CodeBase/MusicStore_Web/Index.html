@@ -1,0 +1,61 @@
+﻿<html lang="en">
+<head>
+    <title>Music Store</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body ng-app="DemoApp">
+
+    <!--<div ng-controller="DemoController">     
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" title="left"
+                       ng-class="{active:transition=='slide-left'}" ng-click="left()">
+                        Left
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="right"
+                       ng-class="{'active':transition=='slide-right'}" ng-click="right()">
+                        Right
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="top"
+                       ng-class="{'active':transition=='slide-top'}" ng-click="top()">
+                        Top
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="bottom"
+                       ng-class="{'active':transition=='slide-bottom'}" ng-click="bottom()">
+                        Bottom
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <h1><i class="fa fa-search"></i>Hello, world!</h1>
+        <div class="content">
+            <div ui-view ng-class="transition">
+                default content
+            </div>
+        </div>
+    </div>-->
+        
+    <app-header>   Header </app-header>
+    <app-sidebar> Sidebar </app-sidebar>
+
+    <app-footer> footer </app-footer>
+
+    <script src="lib/angular.js"></script>    
+    <script src="lib/angular-ui-router.min.js"></script>
+    <script src="lib/angular-animate.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/controllers/HomeCtrl.js"></script>
+</body>
+</html>
